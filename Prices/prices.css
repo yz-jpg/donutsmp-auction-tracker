@@ -1,0 +1,47 @@
+
+.glass {
+	background: rgba(255, 255, 255, 0.03);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.grid-pattern {
+	background-image: radial-gradient(circle at 2px 2px, rgba(14, 165, 233, 0.05) 1px, transparent 0);
+	background-size: 40px 40px;
+}
+
+.grid-bg {
+	background-image: radial-gradient(circle, rgba(14, 165, 233, 0.08) 1px, transparent 1px);
+	background-size: 24px 24px;
+}
+.terminal-border {
+	border: 1px solid rgba(15, 23, 42, 0.08);
+}
+.custom-scrollbar::-webkit-scrollbar {
+	width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: #0EA5E9;
+	border-radius: 0px;
+}
+.scanline {
+	width: 100%;
+	height: 2px;
+	background: rgba(14, 165, 233, 0.15);
+	position: absolute;
+	z-index: 10;
+	pointer-events: none;
+}
+
+@keyframes spin-slow {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+	animation: spin-slow 6s linear infinite;
+}

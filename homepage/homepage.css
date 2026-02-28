@@ -29,3 +29,12 @@
 
 .grad-stop-a { stop-color: #0EA5E9; stop-opacity: 1; }
 .grad-stop-b { stop-color: #3B82F6; stop-opacity: 1; }
+
+@keyframes spin-slow {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+	animation: spin-slow 6s linear infinite;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DonutSMP | Prices</title>
+<script src="prices.js"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="./prices.js"></script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-light text-slate-800 font-sans;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="prices.css"/>
+</head>
+<body class="bg-background-light text-slate-800 font-sans grid-pattern min-h-screen">
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl">
+<div class="glass flex items-center justify-between px-6 py-3 rounded-full shadow-2xl border border-white/20">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center animate-spin-slow">
+<span class="material-icons-round text-white text-lg">donut_large</span>
+</div>
+<span class="font-display font-bold text-lg hidden sm:block">DonutSMP <span class="text-primary font-light">Tracker</span></span>
+</div>
+<div class="flex gap-1">
+<a class="nav-link px-4 py-1.5 rounded-full text-sm font-medium transition-all hover:bg-white/10" href="../homepage/homepage.html">Home</a>
+<a class="nav-link px-4 py-1.5 rounded-full text-sm font-medium bg-primary text-white shadow-lg shadow-primary/25" href="prices.html">Prices</a>
+<a class="nav-link px-4 py-1.5 rounded-full text-sm font-medium transition-all hover:bg-white/10" href="#">Players</a>
+</div>
+<button class="p-2 rounded-full hover:bg-white/10 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round text-lg">dark_mode</span>
+</button>
+</div>
+</nav>
+<main class="pt-28 px-4 max-w-7xl mx-auto flex overflow-hidden grid-bg min-h-screen">
+<aside class="w-16 bg-white border-r border-slate-200 flex flex-col items-center py-6 gap-8">
+<button class="p-2 text-primary bg-primary/5 rounded-sm">
+<span class="material-symbols-outlined">dashboard</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-slate-600">
+<span class="material-symbols-outlined">analytics</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-slate-600">
+<span class="material-symbols-outlined">history</span>
+</button>
+<button class="p-2 text-slate-400 hover:text-slate-600">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</button>
+<div class="mt-auto">
+<button class="p-2 text-slate-400 hover:text-primary">
+<span class="material-symbols-outlined">power_settings_new</span>
+</button>
+</div>
+</aside>
+<section class="flex-1 flex flex-col p-8 overflow-hidden">
+<div class="mb-6 flex flex-col gap-1">
+<div class="flex items-center gap-4 bg-white p-3 terminal-border shadow-sm">
+            <div class="flex-1 relative flex items-center">
+                <span class="material-symbols-outlined absolute left-3 text-slate-400 text-lg">search</span>
+                <input class="w-full bg-slate-50 border-none text-[11px] font-sans py-2 pl-10 focus:ring-1 focus:ring-primary/20 rounded-none placeholder:text-slate-300" placeholder="EXECUTE_SEARCH_QUERY_..." type="text"/>
+            </div>
+<div class="h-6 w-px bg-slate-200"></div>
+<div class="flex items-center gap-3">
+                    <button class="flex items-center gap-2 px-3 py-1.5 bg-slate-50 hover:bg-slate-100 border border-slate-200 transition-colors">
+                        <span class="text-[10px] font-sans font-bold text-slate-500 uppercase tracking-widest">Sort: Volume</span>
+                        <span class="material-symbols-outlined text-sm text-slate-400">expand_more</span>
+                    </button>
+                    <button class="flex items-center gap-2 px-3 py-1.5 bg-slate-50 hover:bg-slate-100 border border-slate-200 transition-colors">
+                        <span class="text-[10px] font-sans font-bold text-slate-500 uppercase tracking-widest">Filter: Rarity</span>
+                        <span class="material-symbols-outlined text-sm text-slate-400">filter_alt</span>
+                    </button>
+                    <button class="flex items-center gap-2 px-3 py-1.5 bg-primary text-white hover:bg-primary/90 transition-colors">
+                        <span class="text-[10px] font-sans font-bold uppercase tracking-widest">Refresh</span>
+                        <span class="material-symbols-outlined text-sm">sync</span>
+                    </button>
+</div>
+</div>
+<div class="flex items-center justify-between px-1">
+                <div class="flex items-center gap-2">
+                    <div class="w-1.5 h-1.5 bg-primary animate-pulse"></div>
+                    <span class="text-[9px] font-sans text-slate-400 uppercase tracking-[0.2em]">Live_Market_Feed_Connected</span>
+                </div>
+                <span class="text-[9px] font-sans text-slate-400 uppercase">showing 1,204 entries</span>
+</div>
+</div>
+<div class="flex-1 bg-white terminal-border shadow-sm flex flex-col overflow-hidden relative">
+<div class="scanline top-0"></div>
+<div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between bg-white">
+                <h2 class="text-xs font-sans font-bold uppercase tracking-[0.3em] flex items-center gap-2">
+<span class="w-1 h-3 bg-primary"></span>
+                    Item_Directory_Alpha
+                </h2>
+                    <div class="flex gap-4">
+                        <span class="text-[10px] font-sans text-slate-400">LAST_UPDATE: 12:44:02</span>
+                        <span class="text-[10px] font-sans text-slate-400">SESSION: 04:22</span>
+                    </div>
+</div>
+<div class="flex-1 overflow-y-auto custom-scrollbar">
+<table class="w-full text-left border-collapse">
+                <thead class="sticky top-0 bg-slate-50 z-20">
+                    <tr class="text-[10px] font-sans text-slate-400 border-b border-slate-200">
+                        <th class="px-8 py-3 font-medium uppercase tracking-widest">Icon</th>
+                        <th class="px-6 py-3 font-medium uppercase tracking-widest">Item_Name</th>
+                        <th class="px-6 py-3 font-medium uppercase tracking-widest">Floor_Price</th>
+                        <th class="px-6 py-3 font-medium uppercase tracking-widest">Volume_24H</th>
+                        <th class="px-6 py-3 font-medium uppercase tracking-widest">Market_Cap</th>
+                        <th class="px-8 py-3 font-medium uppercase tracking-widest text-right">Trend</th>
+                    </tr>
+                </thead>
+                <tbody class="text-[11px] font-sans">
+<tr class="group hover:bg-slate-50 cursor-pointer border-b border-slate-50 transition-all">
+<td class="px-8 py-4">
+<div class="w-10 h-10 bg-slate-100 border border-slate-200 p-2 flex items-center justify-center group-hover:border-primary/30 transition-colors">
+<img alt="Netherite Ingot" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqTB9WID7pm4AgNipDWr_OM8yWOwfSGsUkKiI1gosPA8-yaPLywYT3b4V-N0OzscsxE_IhdefGAmwvtUhoHFx1RqQLuRnI_f1iL_3bHduEegCVLPU0q4TMzY51LLfu_AGuyMPl6N3lyXx95O5noMCpdRZ9l3yX9P-9BSUOqp5pqF5wQnkiujg9b6wWi5g6QrODNsWwKLmgGq2jkWmSgikbLAdB4bE62LYHQEsRrXQzCXzWXq86eg57C7U-mWBFIHiL8zJmm7LHclE"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="font-bold text-slate-900 group-hover:text-primary transition-colors block uppercase">Netherite Ingot</span>
+<span class="text-[9px] text-slate-400 uppercase">minecraft:netherite_ingot</span>
+</td>
+<td class="px-6 py-4">
+<span class="text-accent font-bold">4.02M$</span>
+<div class="w-full bg-slate-100 h-0.5 mt-2">
+<div class="bg-accent h-full w-[40%]"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500 font-medium">1,248 units</td>
+<td class="px-6 py-4 text-slate-400">5.01B$</td>
+<td class="px-8 py-4 text-right">
+<span class="text-success font-bold text-xs">+2.45%</span>
+</td>
+</tr>
+<tr class="group hover:bg-slate-50 cursor-pointer border-b border-slate-50 transition-all bg-slate-50/30">
+<td class="px-8 py-4">
+<div class="w-10 h-10 bg-slate-100 border border-slate-200 p-2 flex items-center justify-center group-hover:border-primary/30 transition-colors">
+<img alt="Elytra" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa-N_Lr-3GOH8G9jVwzDakO6JPwl9Dyqz3X8FKkO_3lDTY9-0lkWTiEAph25wDyFP8CGhqpk0mSnR7MezMsaVdJDGa3kARRFrzB4KYXA45paUsGeqhhNwru1vEWBlOiNdVd9pAHrhW2YbXybDxDz4g8apkSaIRkjXxTguWW8z7VBhlIm5GXeQYTuXTNPC7zixNhGKBNt0BBWoL-fq8mJsRZl6StCjOpNpuKeqFD1Aboy2j1Kad_G43uXYx88Dy2VCHq_gZwLSTFGg"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="font-bold text-slate-900 group-hover:text-primary transition-colors block uppercase">Elytra</span>
+<span class="text-[9px] text-slate-400 uppercase">minecraft:elytra</span>
+</td>
+<td class="px-6 py-4">
+<span class="text-accent font-bold">293.5M$</span>
+<div class="w-full bg-slate-100 h-0.5 mt-2">
+<div class="bg-accent h-full w-[85%]"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500 font-medium">21 units</td>
+<td class="px-6 py-4 text-slate-400">6.16B$</td>
+<td class="px-8 py-4 text-right">
+<span class="text-primary font-bold text-xs">-0.82%</span>
+</td>
+</tr>
+<tr class="group hover:bg-slate-50 cursor-pointer border-b border-slate-50 transition-all">
+<td class="px-8 py-4">
+<div class="w-10 h-10 bg-slate-100 border border-slate-200 p-2 flex items-center justify-center group-hover:border-primary/30 transition-colors">
+<img alt="God Apple" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8LjJSbAxXhhRNRTwpDfZ7mfe0FnDx-ztU5jPB99fizL6EIa79Q0E1BbrTD5yxc6rzTaeyjcpbtCPhP9w1EulSOZxTpnXKBmbXSzcwd88kS0u2QD_16SHqDIHyww878bHfe3dM6OkmZqOV3ycjuPs18goLv9YAVppObeDcvgKRibi-fjGJI5EeUYSGsCHyasg6g7H5hxFACTKfRoyRqE0OxDdAEK-jb5Odfo6aMy6bodP4xVA9VaPXiXK7-oVfi-3z9cS1iVm9M2s"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="font-bold text-slate-900 group-hover:text-primary transition-colors block uppercase">Enchanted Golden Apple</span>
+<span class="text-[9px] text-slate-400 uppercase">minecraft:enchanted_golden_apple</span>
+</td>
+<td class="px-6 py-4">
+<span class="text-accent font-bold">599.0K$</span>
+<div class="w-full bg-slate-100 h-0.5 mt-2">
+<div class="bg-accent h-full w-[15%]"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500 font-medium">3,642 units</td>
+<td class="px-6 py-4 text-slate-400">2.18B$</td>
+<td class="px-8 py-4 text-right">
+<span class="text-slate-400 font-bold text-xs">0.00%</span>
+</td>
+</tr>
+<tr class="group hover:bg-slate-50 cursor-pointer border-b border-slate-50 transition-all bg-slate-50/30">
+<td class="px-8 py-4">
+<div class="w-10 h-10 bg-slate-100 border border-slate-200 p-2 flex items-center justify-center group-hover:border-primary/30 transition-colors">
+<img alt="Ancient Debris" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFFAZzAik3t1hQLDeZPUBrNgF7cra6bOKrFCOBK8DcKAhrM239kk4RaTIDszeIoXYbjAPOcac9FNKbi8HLG4VSZm4ISLlhDhPHZ7d-IlPwFz7tDk-wxq0V-oUSpoYa3Ky0RkoxODwvw6tsXMpWbOI3j1nRtufDEF5oCGl5fiolBqRyPiUwHCNgvdyKdim3bl52lioCNUgEZqZZUnaDQ97iS781ZhOy6sCDthsvC3-v4yHn3Aew5cD2EzJdWx3nBOEHRcR0bF6rNSA"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="font-bold text-slate-900 group-hover:text-primary transition-colors block uppercase">Ancient Debris</span>
+<span class="text-[9px] text-slate-400 uppercase">minecraft:ancient_debris</span>
+</td>
+<td class="px-6 py-4">
+<span class="text-accent font-bold">1.28M$</span>
+<div class="w-full bg-slate-100 h-0.5 mt-2">
+<div class="bg-accent h-full w-[35%]"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500 font-medium">5,102 units</td>
+<td class="px-6 py-4 text-slate-400">6.53B$</td>
+<td class="px-8 py-4 text-right">
+<span class="text-success font-bold text-xs">+1.18%</span>
+</td>
+</tr>
+<tr class="group hover:bg-slate-50 cursor-pointer border-b border-slate-50 transition-all">
+<td class="px-8 py-4">
+<div class="w-10 h-10 bg-slate-100 border border-slate-200 p-2 flex items-center justify-center group-hover:border-primary/30 transition-colors">
+<img alt="Emerald Ore" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYrQFS-CSuJCnB76BH7LKmqnJyMr8gmqxQUas9Q8IMckvzeWO0xd74YxVndxOOlqXRKr98WORrvwMvPcvuAD10gkA6TiA9X0iNam27sBUeq7p6EqfcwzOOjK536gJzhRJLXsJiXdEgXe4Ky162mpoz_RNjsXiD9RSBOqVhKU94hbD32zV-xtx7jBFLlzGxnqSugut1Pj-PdsEioLzTNVtUGIpJ6GlB1fPqOgAJKq-vVtawVBfrTRbOJUWMlE885pzJyF1VEwhZMoE"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="font-bold text-slate-900 group-hover:text-primary transition-colors block uppercase">Deepslate Emerald</span>
+<span class="text-[9px] text-slate-400 uppercase">minecraft:deepslate_emerald_ore</span>
+</td>
+<td class="px-6 py-4">
+<span class="text-accent font-bold">938.4K$</span>
+<div class="w-full bg-slate-100 h-0.5 mt-2">
+<div class="bg-accent h-full w-[25%]"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500 font-medium">419 units</td>
+<td class="px-6 py-4 text-slate-400">393M$</td>
+<td class="px-8 py-4 text-right">
+<span class="text-primary font-bold text-xs">-5.10%</span>
+</td>
+</tr>
+<tr class="group hover:bg-slate-50 cursor-pointer border-b border-slate-50 transition-all bg-slate-50/30">
+<td class="px-8 py-4">
+<div class="w-10 h-10 bg-slate-100 border border-slate-200 p-2 flex items-center justify-center group-hover:border-primary/30 transition-colors">
+<img alt="Netherite Scrap" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKTaPSQOVYBIhyuQ79WiaBfrGKAqyxvhQkOhYmHieiQIZmJHXomtwIzHD3LsVHLlnLaKYHPDNjDDOCEMkjrqp0x_yTjrRlszTteWvhUQQCDC-59dp3DwNjDzEE_9mJHxv7W4xH5ftmH28181G0d1J1jqJC_RHL3LIxOL8yAaxhh7YkZwExALZLF5LfREszryvzFRaiYlx-mVhrbLZHsnZoYFOYJTm-cO6S6tYENORxtY4V1Dh9P20uO3D-wFUm_k8WCZ1L_sHs6S4"/>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="font-bold text-slate-900 group-hover:text-primary transition-colors block uppercase">Netherite Scrap</span>
+<span class="text-[9px] text-slate-400 uppercase">minecraft:netherite_scrap</span>
+</td>
+<td class="px-6 py-4">
+<span class="text-accent font-bold">1.35M$</span>
+<div class="w-full bg-slate-100 h-0.5 mt-2">
+<div class="bg-accent h-full w-[38%]"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-500 font-medium">2,240 units</td>
+<td class="px-6 py-4 text-slate-400">3.02B$</td>
+<td class="px-8 py-4 text-right">
+<span class="text-success font-bold text-xs">+1.82%</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+                    <div class="bg-slate-50 border-t border-slate-200 px-6 py-2 flex items-center justify-between text-[10px] font-sans">
+<div class="flex items-center gap-6">
+<span class="text-slate-400">SYSTEM_MODE: DIRECTORY</span>
+<span class="text-slate-400">UI_VERSION: 1.0.4a</span>
+</div>
+<div class="flex items-center gap-4 text-slate-400">
+<span>COORDINATES: [42.1, -12.4]</span>
+<span class="text-primary font-bold">READY</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="h-6 bg-slate-900 text-white px-4 flex items-center justify-between text-[9px] font-sans uppercase tracking-[0.2em]">
+<div>DonutSMP Auction Tracker // Monitoring Live Transactions</div>
+<div class="flex items-center gap-4">
+<span>Latency: 14ms</span>
+<span>Uptime: 99.99%</span>
+</div>
+</footer>
+
+<script src="../navbar.js"></script>
+</body></html>
