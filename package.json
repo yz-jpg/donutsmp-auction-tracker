@@ -7,5 +7,24 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "name": "donutsmp-auction-tracker",
+  "version": "1.0.0",
+  "description": "A data-driven web application that analyses DonutSMP auction house prices to track item trends, compute price statistics, and identify potential flipping opportunities. Built as a personal project to practise API integration, data analysis, and frontend design.",
+  "main": "navbar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yz-jpg/donutsmp-auction-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yz-jpg/donutsmp-auction-tracker/issues"
+  },
+  "homepage": "https://github.com/yz-jpg/donutsmp-auction-tracker#readme"
 }
